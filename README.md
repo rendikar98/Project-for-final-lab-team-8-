@@ -1,6 +1,10 @@
 # Project-for-final-lab-team-8
 
 ```bash
+Praktikum Pemrograman Kelas A
+```
+
+```bash
 make a simple games like quiz with CLI
 ```
 # Anggota Kelompok
