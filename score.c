@@ -28,7 +28,7 @@ puts("--------------------------------------");
 printf("Pilihan Jawaban: ");
 scanf("%c",&pilihan1);
 delay(1);
-if (pilihan1 == 'C' || pilihan1 =='c')
+if (toupper(pilihan1)=='C')
 {
     printf("Anda Benar\nPoin yang anda dapatkan sebesar 20");
     *score +=20;
@@ -52,7 +52,7 @@ puts("--------------------------------------------------");
 printf("Pilihan Jawaban: ");
 scanf(" %c",&pilihan2);
 delay(1);
-if (pilihan2 == 'A' || pilihan2 =='a')
+if (toupper(pilihan2)=='A')
 {
     printf("Anda Benar\nPoin yang anda dapatkan sebesar 20");
     *score +=20;
@@ -76,7 +76,7 @@ puts("-------------------------------------------------");
 printf("Pilihan Jawaban: ");
 scanf(" %c",&pilihan3);
 delay(1);
-if (pilihan3 == 'D' || pilihan3 =='d')
+if (toupper(pilihan3)=='D')
 {
     printf("Anda Benar\nPoin yang anda dapatkan sebesar 20");
     *score +=20;
@@ -100,7 +100,7 @@ puts("-------------------------------------");
 printf("Pilihan Jawaban: ");
 scanf(" %c",&pilihan4);
 delay(1);
-if (pilihan4 == 'C' || pilihan4 =='c')
+if (toupper(pilihan4)=='C')
 {
     printf("Anda Benar\nPoin yang anda dapatkan sebesar 20");
     *score +=20;
@@ -124,7 +124,7 @@ puts("------------------------------------------------");
 printf("Pilihan Jawaban: ");
 scanf(" %c",&pilihan5);
 delay(1);
-if (pilihan5 == 'D' || pilihan5 =='d')
+if (toupper(pilihan5)=='D')
 {
     printf("Anda Benar\nPoin yang anda dapatkan sebesar 20");
     *score +=20;
