@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include<ctype.h>
-#include<time.h>
+#include <ctype.h>
+#include <time.h>
+#include <windows.h>
 
 COORD coord = {0,0};
 #define x 28
@@ -316,5 +317,5 @@ int main(int argc, char argv[])//argument for this program is username and pass
     cursor(36, 10);
     printf("Total skor anda adalah %d\n",score);
     
-    return 0;
+    return EXIT_SUCCESS;
 }
