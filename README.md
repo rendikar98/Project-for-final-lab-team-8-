@@ -16,7 +16,7 @@ make a simple games like quiz with CLI
 4.Fachri Rozan
 ```
 
-Untuk melakukan Sign up harus menjalankan program registrasi.c terlebih dahulu
-Untuk melakukan Log in melalui command line argument di program main.c
-Contoh: .\main ren 2002 (.\NamaProgram Username Password)
-Untuk menggunakan program registrasi diharuskan untuk membuat folder bernama Database di tempat kode ini disimpan
+Untuk melakukan Sign up harus menjalankan program registrasi.c terlebih dahulu\n
+Untuk melakukan Log in melalui command line argument di program main.c\n
+Contoh: .\main ren 2002 (.\NamaProgram Username Password)\n
+Untuk menggunakan program registrasi diharuskan untuk membuat folder bernama Database di tempat kode ini disimpan\n
