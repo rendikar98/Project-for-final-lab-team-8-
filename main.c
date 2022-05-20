@@ -31,10 +31,24 @@ void cursor(int kolom, int baris)
 void *soal(int *score,int *count){
   char pilihan1,pilihan2,pilihan3,pilihan4,pilihan5;
   system("cls");
+    cursor(36, 6);
+    printf("=======================================================================================");
     cursor(36, 7);
-    printf("Quiz dimulai\n");
-    cursor(36, 8);
+    printf("                          Quiz dimulai dalam hitungan...\n");
     delay(2);
+    system("cls");
+    cursor(36, 8);
+    printf("                                     3\n");
+    delay(1);
+    system("cls");
+    cursor(36, 8);
+    printf("                                     2\n");
+    delay(1);
+    system("cls");
+    cursor(36, 8);
+    printf("                                     1\n");
+    delay(1);
+    system("cls");
     cursor(36, 8);
     printf("========================================================================\n");
     cursor(36, 9);
