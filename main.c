@@ -269,7 +269,7 @@ void *soal(int *score,int *count){
     return 0;
 }
 
-int main(int argc, char argv[])//argument for this program is username and pass
+int main(int argc, char* argv[])//argument for this program is username and pass
 { 
     // Login
     
@@ -320,6 +320,7 @@ int main(int argc, char argv[])//argument for this program is username and pass
 
         return EXIT_FAILURE;
     }
+    delay(1);
     //display main menu
 
     //quiz area(question and score)
