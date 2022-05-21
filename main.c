@@ -130,8 +130,6 @@ void *soal(int *score,int *count){
         printf("Anda Salah\n");
         cursor(36, 20);
         printf("Poin yang anda dapatkan sebesar 0\n");
-        *score +=20;
-        *count +=1;
     }
 
     cursor(36, 8);
@@ -174,8 +172,7 @@ void *soal(int *score,int *count){
         printf("Anda Salah\n");
         cursor(36, 19);
         printf("Poin yang anda dapatkan sebesar 0\n");
-        *score +=20;
-        *count +=1;
+       
     }
 
     cursor(36, 8);
@@ -218,8 +215,6 @@ void *soal(int *score,int *count){
         printf("Anda Salah\n");
         cursor(36, 19);
         printf("Poin yang anda dapatkan sebesar 0\n");
-        *score +=20;
-        *count +=1;
     }
 
     cursor(36, 8);
@@ -262,8 +257,6 @@ void *soal(int *score,int *count){
         printf("Anda Salah\n");
         cursor(36, 19);
         printf("Poin yang anda dapatkan sebesar 0\n");
-        *score +=20;
-        *count +=1;
     }
     delay(1);
     return 0;
