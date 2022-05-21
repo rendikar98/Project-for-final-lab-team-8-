@@ -6,8 +6,6 @@
 #include <windows.h>
 
 COORD coord = {0,0};
-#define x 28
-
 //make function prototype, later make header file for all function
 
 int detik;
@@ -286,13 +284,15 @@ int main(int argc, char* argv[])//argument for this program is username and pass
     strcpy(passwordInput, argv[2]);
 
     FILE *fpr;
-
+    
+    //membuka file login.bin untuk dibaca hasil registrasinya
     if ((fpr = fopen("Database/login.bin", "rb")) == NULL)
     {
         printf("\tgagal membuka FILE Database/login.bin\n");
         return EXIT_FAILURE;
     }
-
+    
+    //buffer untuk menyimpan username dan password dari login.bin
     char akun[25];
     fread(akun, sizeof(char), sizeof(akun) / sizeof(char), fpr);
 
@@ -301,16 +301,18 @@ int main(int argc, char* argv[])//argument for this program is username and pass
     char *string[25];
     char username[25], password[25];
     int ctrl = 0;
-
+    
+    //memisahkan username dan password dengan karakter spasi
     string[0] = strtok(akun, " ");
     while (string[ctrl++] != NULL)
     {
         string[ctrl] = strtok(NULL, " ");
     }
-
+    //menyalin username dan password yang diinput
     strcpy(username, string[0]);
     strcpy(password, string[1]);
-
+    
+    //membandingkan username dan password input dengan yang sudah disimpan di binary
     if ((strcmp(usernameInput, username) == 0) && (strcmp(passwordInput, password) == 0))
     {
         printf("\tBerhasil Login!\n");
@@ -321,11 +323,12 @@ int main(int argc, char* argv[])//argument for this program is username and pass
         return EXIT_FAILURE;
     }
     delay(1);
-    //display main menu
-
+    
     //quiz area(question and score)
     int score=0,count=0;
     soal(&score,&count);
+    
+    //tampilan akhir
     system("cls");
     gotoxy(36, 8);
     printf("Soal yang benar %d\n",count);
