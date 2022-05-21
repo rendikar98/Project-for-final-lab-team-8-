@@ -321,7 +321,7 @@ int main(int argc, char* argv[])//argument for this program is username and pass
     soal(&score,&count);
     system("cls");
     cursor(36, 8);
-    printf("Soal yang benar %d\n",count);
+    printf("Anda benar sebanyak %d soal dari 5 soal \n",count);
     cursor(36, 10);
     printf("Total skor anda adalah %d\n",score);
     
